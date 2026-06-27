@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    margin-left: 10px;
+    margin-top: 120px;
+    background-color: saddlebrown;
+    
+}
+
+body{
+    color: azure;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
