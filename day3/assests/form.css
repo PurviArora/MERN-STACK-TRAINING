@@ -1,0 +1,10 @@
+body{
+        background: skyblue;
+        color: black;
+    
+}
+table{
+        background: pink;
+        border-color: black;
+        border-radius: 15px;
+}

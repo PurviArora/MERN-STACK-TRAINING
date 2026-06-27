@@ -1,0 +1,41 @@
+body{
+    margin: auto;
+    background-color: antiquewhite;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+h1{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 40px;
+    text-decoration: dotted;
+    background-color: wheat;
+    padding: 15px;
+}
+
+.grid-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 20px;
+}
+
+.img-box{
+    overflow: hidden;
+}
+
+.img-box img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.row2-start {
+    grid-column: 2;
+}
+
+.row3-start {
+    grid-column: 2;
+}
