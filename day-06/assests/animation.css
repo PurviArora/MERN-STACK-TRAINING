@@ -1,0 +1,51 @@
+*{
+    margin: 4%;
+}
+
+body{
+    /* margin: 5%; */
+    background-color:lightpink;
+}
+
+.animation{
+            height: 200px;
+            width: 200px;
+            border: 8px solid salmon;
+            position: absolute;
+
+            /* Animation Properties */
+            animation-name: box;
+            animation-duration: 4s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes box {
+            0% {
+                top: 0;
+                left: 0;
+            }
+
+            25% {
+                top: 0;
+                left: 400px;
+                transform: rotate(45deg);
+            }
+
+            50% {
+                top: 400px;
+                left: 400px;
+                transform: rotate(90deg);
+            }
+
+            75% {
+                top: 400px;
+                left: 0;
+            }
+
+            100% {
+                top: 0;
+                left: 0;
+            }
+        }
