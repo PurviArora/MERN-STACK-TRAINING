@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+/* Page */
+
+.skills-page{
+    min-height:100vh;
+    background:#0f172a;
+    padding:70px 40px;
+}
+
+/* Container */
+
+.skills-container{
+    max-width:1300px;
+    margin:auto;
+    text-align:center;
+}
+
+/* Heading */
+
+.skills-container h1{
+    font-size:3.2rem;
+    color:#ffffff;
+    margin-bottom:15px;
+}
+
+.skills-container p{
+    color:#cbd5e1;
+    font-size:1.1rem;
+    margin-bottom:50px;
+    line-height:1.7;
+}
+
+/* ==========================
+   FIRST ROW (3 CARDS)
+========================== */
+
+.skills-grid-three{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:35px;
+    margin-bottom:35px;
+}
+
+/* ==========================
+   SECOND ROW (4 CARDS)
+========================== */
+
+.skills-grid-four{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+/* ==========================
+   CARD
+========================== */
+
+.skill-card{
+    background:#1e293b;
+    border-radius:18px;
+    padding:35px 25px;
+    transition:0.4s;
+    cursor:pointer;
+    border:1px solid transparent;
+    box-shadow:0 8px 20px rgba(0,0,0,0.25);
+}
+
+.skill-card:hover{
+    transform:translateY(-10px);
+    border-color:#8b5cf6;
+    box-shadow:0 15px 35px rgba(139,92,246,.35);
+}
+
+/* Heading */
+
+.skill-card h3{
+    color:#8b5cf6;
+    font-size:1.8rem;
+    margin-bottom:18px;
+}
+
+/* Description */
+
+.skill-card p{
+    color:#d1d5db;
+    font-size:1rem;
+    line-height:1.8;
+    margin:0;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:992px){
+
+.skills-grid-three{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.skills-grid-four{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.skills-page{
+    padding:60px 20px;
+}
+
+.skills-container h1{
+    font-size:2.5rem;
+}
+
+.skills-container p{
+    font-size:1rem;
+    margin-bottom:35px;
+}
+
+.skills-grid-three,
+.skills-grid-four{
+    grid-template-columns:1fr;
+}
+
+.skill-card{
+    padding:30px 20px;
+}
+
+.skill-card h3{
+    font-size:1.6rem;
+}
+
+.skill-card p{
+    font-size:.95rem;
+}
+
+}

@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+/* ===========================
+   PROJECTS SECTION
+=========================== */
+
+.projects-page{
+    min-height:100vh;
+    background:#0f172a;
+    padding:80px 8%;
+}
+
+.projects-container{
+    max-width:1300px;
+    margin:auto;
+}
+
+.projects-container h1{
+    text-align:center;
+    color:#ffffff;
+    font-size:3.2rem;
+    margin-bottom:15px;
+}
+
+.projects-text{
+    text-align:center;
+    color:#cbd5e1;
+    font-size:18px;
+    margin-bottom:60px;
+    line-height:1.7;
+}
+
+/* ===========================
+   PROJECT GRID
+=========================== */
+
+.projects-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
+    gap:35px;
+}
+
+/* ===========================
+   PROJECT CARD
+=========================== */
+
+.project-card{
+    background:#1e293b;
+    border:1px solid transparent;
+    border-radius:20px;
+    padding:30px;
+    transition:all .35s ease;
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+    border-color:#8b5cf6;
+    box-shadow:0 18px 35px rgba(139,92,246,.35);
+}
+
+.project-card h3{
+    color:#8b5cf6;
+    font-size:1.5rem;
+    margin-bottom:18px;
+}
+
+.project-card p{
+    color:#d1d5db;
+    line-height:1.8;
+    margin-bottom:25px;
+    font-size:15px;
+}
+
+.project-card span{
+    display:inline-block;
+    background:rgba(139,92,246,.15);
+    color:#c4b5fd;
+    padding:10px 16px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:500;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+.projects-container h1{
+    font-size:2.7rem;
+}
+
+.projects-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.projects-page{
+    padding:60px 20px;
+}
+
+.projects-container h1{
+    font-size:2.3rem;
+}
+
+.projects-text{
+    font-size:16px;
+    margin-bottom:40px;
+}
+
+.projects-grid{
+    grid-template-columns:1fr;
+}
+
+.project-card{
+    padding:25px;
+}
+
+.project-card h3{
+    font-size:1.3rem;
+}
+
+}
