@@ -40,9 +40,12 @@ const Login = () => {
                 <label htmlFor="" className='fs-3 mb-2'> Password </label>
                 <input type='password' className='form-control' value={password} onChange={(event)=>setPassword(event.target.value)} />
             </div>
-            <div className="mb-3">
+            <div className="mb-3 text-center">
                 <input type='submit' className='btn btn-dark fs-5 fst-italic fw-bolder' value="Login" />
             </div>
+            <div className='mb-3 text-center'>
+                    <p> Don't have an account? <span onClick={()=> navigate("/register")} className='fw-bolder text-decoration-underline'>Register here</span> </p>
+                </div>
         </form>
       </div>
     </>

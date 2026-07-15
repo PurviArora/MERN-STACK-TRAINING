@@ -57,10 +57,10 @@ const Register = () => {
                     <label htmlFor="" className='fs-3 mb-2'> Password </label>
                     <input type='password' className='form-control' name="password" value={formData.password} onChange={handleChange} />
                 </div>
-                <div className="mb-3">
+                <div className="mb-3 text-center">
                     <input type='submit' className='btn btn-dark fs-5 fst-italic fw-bolder' value="Register" />
                 </div>
-                <div className='mb-3'>
+                <div className='mb-3 text-center'>
                     <p>Already Register? <span onClick={()=> navigate("/")} className='fw-bolder text-decoration-underline'>Login here</span> </p>
                 </div>
             </form>
