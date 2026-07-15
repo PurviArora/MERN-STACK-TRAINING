@@ -1,0 +1,21 @@
+{
+  "todos": [
+    {
+      "id": "1",
+      "taskName": "Learn Mern"
+    },
+    {
+      "taskName": "HTML5",
+      "id": "y5Qfb5ZkjYw"
+    },
+    {
+      "taskName": "CSS3",
+      "id": "pHM_VfgedzM"
+    },
+    {
+      "taskName": "JAVASCRIPT",
+      "id": "T0T7_lctOOw"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
