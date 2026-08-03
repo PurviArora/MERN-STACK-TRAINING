@@ -1,0 +1,142 @@
+                         Day-19-MongoDB
+
+
+Introduction
+Mongo DB is a Document-Oriented, No SQL database created in C++
+Unstructured database
+No SQL stands for "Not Only SQL"
+No SQL stores data in flexible formats such as :- Document, Key-Value, Graph, Column-based
+
+
+
+
+SQL : Tables, Rows, Columns, Fixed Schema, MySQL
+No SQL : Collection, Documents, Fields, Flexible Schema, MongoDB
+
+
+
+
+Commands :---
+
+Show All Databases
+show dbs
+
+2. Create or Switch Database
+use database_name
+
+3. Check Current Database
+Db
+
+4. Create Collection
+db.createCollection("collection_name")
+
+5. Show All Collections
+show collections
+
+6. Insert One Document
+db.students.insertOne({
+   name: "",
+   age: ,
+   course: ""
+   })
+
+7. Insert Multiple Documents
+db.students.insertMany([
+   {
+   name: "",
+   age: ,
+   course: ""
+   },
+   {
+   name: "",
+   age: ,
+   course: ""
+   }
+   ])
+
+8. Find All Documents
+db.students.find()
+
+9. Find One Document
+db.students.findOne()
+
+10. Find with Condition
+db.students.find({
+   age: 22
+   })
+
+11. Find Specific Fields (1 means visible & 0 means does not visible)
+ db.students.find({}, {
+    name: 1,
+    age: 1,
+   _id: 0
+   }
+   )
+
+
+Comparison Operators
+Equal to {<key>:{$eg;<value>}}
+Less Than {<key>:{$lt:<value>}}
+Less than equal {<key>:{$lte:<value>}}
+Greater Than : {<key>:{$gt:<value>}}
+Greater Than or equal {<key>:{$gte:<value>}}
+Not Equal {<key>:{$ne:<value>}}
+Values in an array {<key>:{$in:[<value1>, <value2>,<valueN>]}}
+Values not in an array {<key>:{$nin:<value>}}
+
+
+12. AND in MongoDB
+db.mycol.find({ $and: [ {<key1>:<value1>}, { <key2>:<value2>} ] })
+
+13. OR in MongoDB
+db.mycol.find({$or: [{key1: value1}, {key2:value2}]}).pretty()
+
+14. NOT in MongoDB
+db.COLLECTION_NAME.find({$not: [{key1: value1}, {key2:value2}]})
+
+15. Update One Document
+db.COLLECTION_NAME.update(SELECTION_CRITERIA, UPDATED_DATA)
+
+16. findOneAndUpdate() method
+db.COLLECTION_NAME.findOneAndUpdate(SELECTIOIN_CRITERIA, UPDATED_DATA)
+
+17. updateOne()
+db.COLLECTION_NAME.updateOne(<filter>, <update>)
+
+18. updateMany()
+db.COLLECTION_NAME.update(<filter>, <update>)
+
+19. deleteOne()
+db.COLLECTION_NAME.deleteOne(DELLETION_CRITTERIA)
+
+20. Remove All Documents
+db.mycol.remove({})
+
+21. Count Documents
+db.students.countDocuments()
+
+22. Sort Documents
+db.students.find().sort({ age: 1 }) : ASC
+db.students.find().sort({ age: -1 }) : DESC
+
+23. Drop Collection
+db.students.drop()
+
+24. Drop Database
+db.dropDatabase()
+
+25. Limit Records
+db.students.find().limit(3)
+
+26. Skip Records
+db.students.find().skip(2)
+
+27. Pagination
+db.students.find() .skip(5 .limit(5)
+
+
+
+
+
+
+
