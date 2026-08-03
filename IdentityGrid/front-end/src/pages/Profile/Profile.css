@@ -1,0 +1,123 @@
+.profile-page {
+  padding:20px;
+}
+
+
+.profile-card,
+.password-card {
+
+  background:white;
+
+  border-radius:20px;
+
+  padding:30px;
+
+  margin-bottom:25px;
+
+  box-shadow:0 10px 30px rgba(0,0,0,0.06);
+
+}
+
+
+
+.profile-top {
+
+  display:flex;
+
+  align-items:center;
+
+  gap:20px;
+
+  margin-bottom:30px;
+
+}
+
+
+
+.profile-avatar {
+
+  width:90px;
+
+  height:90px;
+
+  border-radius:50%;
+
+  background:#2563eb;
+
+  color:white;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  font-size:30px;
+
+  font-weight:700;
+
+}
+
+
+
+.profile-form {
+
+  display:grid;
+
+  grid-template-columns:repeat(2,1fr);
+
+  gap:20px;
+
+}
+
+
+
+.form-group {
+
+  display:flex;
+
+  flex-direction:column;
+
+  gap:8px;
+
+}
+
+
+.form-group label {
+
+  font-size:14px;
+
+  color:#64748b;
+
+}
+
+
+.form-group input {
+
+  padding:12px;
+
+  border-radius:10px;
+
+  border:1px solid #e5e7eb;
+
+}
+
+
+
+.save-profile {
+
+  margin-top:25px;
+
+  padding:12px 25px;
+
+  border:none;
+
+  border-radius:10px;
+
+  background:#2563eb;
+
+  color:white;
+
+  cursor:pointer;
+
+}

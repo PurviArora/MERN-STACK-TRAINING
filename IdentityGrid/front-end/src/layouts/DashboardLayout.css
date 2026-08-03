@@ -1,0 +1,39 @@
+.dashboard-layout {
+
+  min-height: 100vh;
+
+  background: #F8FAFC;
+
+}
+
+.navbar {
+
+  left:270px;
+
+  transition:0.3s;
+
+}
+
+
+.navbar.expanded {
+
+  left:90px;
+
+}
+
+.main-content {
+
+  margin-left:270px;
+
+  padding:110px 30px 30px;
+
+  min-height:100vh;
+
+  overflow-y:auto;
+}
+
+.main-content.expanded {
+
+  margin-left:90px;
+
+}

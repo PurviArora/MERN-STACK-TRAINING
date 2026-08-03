@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #0f172a;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+input,
+button {
+  font-family: inherit;
+}
+
+body.dark {
+
+  background:#0f172a;
+
+}
+
+
+/* Navbar */
+
+body.dark .navbar {
+
+  background:#111827;
+
+  border-color:#1f2937;
+
+}
+
+
+body.dark .profile-info h4{ 
+
+  color:#f9fafb;
+
+}
+
+body.dark .profile-info p{
+
+  color:#7dc2f4;
+
+}
+
+body.dark .dashboard-header h1{
+  color: white;
+}
+
+body.dark .dashboard-header p{
+  color: #7dc2f4;
+}
+
+/* Sidebar */
+
+body.dark .sidebar {
+
+  background:#111827;
+
+  border-color:#1f2937;
+
+}
+
+
+body.dark .logo h2 {
+
+  color:#60a5fa;
+
+}
+
+
+body.dark .menu-item {
+
+  color:#cbd5e1;
+
+}
+
+
+body.dark .menu-item:hover {
+
+  background:#1e293b;
+
+}
+
+
+/* Dashboard */
+
+body.dark .main-content {
+
+  background:#0f172a;
+
+}
+
+/* Users */
+
+body.dark .users-header h1{
+  color: white;
+}
+
+body.dark .users-header p{
+  color: #7dc2f4;
+}
+
+/* Add User */
+body.dark .page-header h1{
+  color: white;
+}
+
+body.dark .page-header p{
+  color: #7dc2f4;
+}

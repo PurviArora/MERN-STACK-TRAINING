@@ -1,0 +1,142 @@
+.settings-page {
+
+ padding:20px;
+
+}
+
+
+
+.settings-card {
+
+ background:white;
+
+ border-radius:20px;
+
+ padding:30px;
+
+ margin-bottom:25px;
+
+ box-shadow:0 10px 30px rgba(0,0,0,0.06);
+
+}
+
+
+
+.setting-item {
+
+ display:flex;
+
+ justify-content:space-between;
+
+ align-items:center;
+
+ margin-top:20px;
+
+}
+
+
+
+.setting-item p {
+
+ color:#64748b;
+
+}
+
+
+.toggle-switch {
+
+  width:50px;
+
+  height:28px;
+
+  border-radius:20px;
+
+  border:none;
+
+  background:#cbd5e1;
+
+  cursor:pointer;
+
+  padding:3px;
+
+  transition:0.3s;
+
+}
+
+
+.toggle-switch span {
+
+  display:block;
+
+  width:22px;
+
+  height:22px;
+
+  background:white;
+
+  border-radius:50%;
+
+  transition:0.3s;
+
+}
+
+
+
+.toggle-switch.active {
+
+  background:#2563eb;
+
+}
+
+
+
+.toggle-switch.active span {
+
+  transform:translateX(22px);
+
+}
+
+.notification-popup {
+
+  position:fixed;
+
+  right:30px;
+
+  bottom:30px;
+
+  background:#2563eb;
+
+  color:white;
+
+  padding:16px 25px;
+
+  border-radius:12px;
+
+  box-shadow:0 10px 30px rgba(0,0,0,0.2);
+
+  animation:slideIn 0.3s ease;
+
+}
+
+
+
+@keyframes slideIn {
+
+  from {
+
+    transform:translateY(40px);
+
+    opacity:0;
+
+  }
+
+
+  to {
+
+    transform:translateY(0);
+
+    opacity:1;
+
+  }
+
+}
